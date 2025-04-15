@@ -1,0 +1,101 @@
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--nav-bg) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  color: var(--nav-text) !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  padding: 8px 12px;
+  transition: color var(--transition-normal);
+}
+
+.nav-item:hover {
+  color: var(--primary) !important;
+}
+
+.mobile-menu-toggle,
+.dark-mode-toggle {
+  color: var(--nav-text) !important;
+  transition: color var(--transition-fast);
+}
+
+.mobile-menu-toggle:hover,
+.dark-mode-toggle:hover {
+  color: var(--primary) !important;
+}
+
+.nav-btn {
+  background: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border: 2px solid var(--border-color) !important;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.organizations-btn {
+  background: #fff !important;
+  color: var(--border-color) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.organizations-btn:hover {
+  background-color: var(--border-color) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    max-width: none;
+  }
+
+  .MuiMenu-paper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .MuiPaper-root {
+    width: 100%;
+    max-width: none;
+  }
+}

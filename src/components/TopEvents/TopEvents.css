@@ -1,0 +1,274 @@
+/* .events-section {
+  padding: 30px 0;
+  background-color: var(--bg-light);
+} */
+
+.top-event-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.-top-event-container h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.top-navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.top-nav-button {
+  background-color: var(--text-primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-button:hover {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  box-shadow: var(--card-shadow);
+}
+
+.top-nav-button svg {
+  font-size: 18px;
+}
+
+.top-event-grid {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.top-event-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Event Card */
+.top-event-card {
+  width: 320px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  transition: 0.3s;
+  position: relative;
+  padding-bottom: 10px;
+  color: var(--text-color);
+  scroll-snap-align: start;
+}
+
+.top-event-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+  transform: translateY(-5px);
+}
+
+[data-theme="dark"] .top-event-card:hover {
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 6px 15px;
+}
+
+.top-event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.concert-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: var(--primary);
+  color: var(--text-white);
+  padding: 7px ;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.concert-icon svg {
+  font-size: 24px;
+}
+
+/* Price Badge */
+.top-event-card .price {
+  background: var(--text-primary);
+  color: var(--text-white);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+}
+
+/* Card Body */
+.top-event-card .top-card-body {
+  padding: 15px;
+}
+
+.top-event-card .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-event-card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Muted Text */
+.top-event-card .text-muted {
+  font-size: 14px;
+  color: var(--icon-text);
+  margin-bottom: 5px;
+}
+
+/* Followers & Date */
+.top-event-card .followers,
+.top-event-card .date {
+  font-size: 14px;
+  color: var(--icon-text);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/* Icons */
+.top-event-card .icons {
+  position: absolute;
+  top: 130px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.top-event-card .icon {
+  background: var(--text-primary);
+  color: var(--text-white);
+  padding: 7px;
+  border-radius: 50%;
+  font-size: 35px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.top-event-card .icon:hover {
+  background: var(--bg-color);
+  color: var(--text-primary);
+  box-shadow: var(--card-shadow);
+}
+
+/* Small Icons */
+.top-card-body .icon-small {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.top-card-body .category {
+  font-size: 17px;
+  color: var(--icon-text);
+  margin-bottom: 5px;
+}
+
+/* View All Button Container */
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* View All Button */
+.btn-view {
+  background-color: var(--text-primary);
+  color: var(--text-white);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.btn-view:hover {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  box-shadow: var(--card-shadow);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .top-event-container {
+    width: 95%;
+  }
+
+  .top-event-grid {
+    padding: 5px 0;
+  }
+
+  .top-event-card {
+    width: 98%;
+    /* min-width: 280px; */
+  }
+
+  .top-header-container {
+    align-items: center;
+    gap: 5px;
+  }
+
+  .top-navigation-buttons {
+    width: 100px;
+    justify-content: center;
+  }
+
+  .btn-view {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}

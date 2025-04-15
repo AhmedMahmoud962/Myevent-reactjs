@@ -1,0 +1,147 @@
+/* Categories Container */
+.categories-container {
+  width: 94% !important;
+  margin: 20px auto !important;
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+/* Categories List */
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+/* Hide Scrollbar */
+.categories-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Category Item */
+.category-item {
+  flex: 0 1 calc(12.5% - 30px);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  z-index: 99;
+}
+
+/* Category Icon */
+.category-icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--icon-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.category-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Category Name */
+.category-name {
+  font-size: .9em;
+  font-weight: 600;
+  color: var(--icon-text);
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .categories-list {
+    gap: 25px;
+  }
+
+  .category-item {
+    flex: 0 1 calc(25% - 20px);
+  }
+
+  .category-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .category-image {
+    width: 55px;
+    height: 55px;
+  }
+
+  .category-name {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Categories Container */
+  .categories-container {
+    width: 98%;
+  }
+
+  .categories-list {
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .category-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  .category-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .category-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .category-name {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .categories-list {
+    gap: 22px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .category-item {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+  }
+
+  .category-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .category-name {
+    font-size: 0.8em;
+  }
+}
