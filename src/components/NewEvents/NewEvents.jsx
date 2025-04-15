@@ -5,7 +5,7 @@ import ShareIcon from '@mui/icons-material/Share'
 import GroupIcon from '@mui/icons-material/Group'
 // import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
-import { newEvents } from '../../assets/Data'
+import { newEvents } from '../../assets/Data.jsx'
 
 function NewEvents() {
   return (

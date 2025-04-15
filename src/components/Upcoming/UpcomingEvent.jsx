@@ -5,7 +5,7 @@ import ShareIcon from '@mui/icons-material/Share'
 import GroupIcon from '@mui/icons-material/Group'
 // import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
-import { upcomingEvents } from '../../assets/Data'
+import { upcomingEvents } from '../../assets/Data.jsx'
 
 function UpcomingEvent() {
   // Get only the last 4 events
@@ -27,8 +27,9 @@ function UpcomingEvent() {
                 )}
               </div>
               <div className="icons">
-              {localStorage.getItem('token') && <FavoriteBorderIcon className="icon" />}
-
+                {localStorage.getItem('token') && (
+                  <FavoriteBorderIcon className="icon" />
+                )}
               </div>
               <div className="upcoming-card-body">
                 <span className="date">{event.date}</span>

@@ -7,7 +7,8 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 // import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
-import { events } from '../../assets/Data'
+import { events } from '../../assets/Data.jsx'
+
 
 function TopEvents() {
   const sliderRef = useRef(null)

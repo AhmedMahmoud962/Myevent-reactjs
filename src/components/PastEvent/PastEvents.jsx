@@ -5,7 +5,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import GroupIcon from '@mui/icons-material/Group'
 // import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
-import { pastEvents } from '../../assets/Data'
+import { pastEvents } from '../../assets/Data.jsx'
 
 function PastEvents() {
   // Get only the last 4 events
