@@ -48,9 +48,7 @@ function TopEvents() {
             <div className="top-event-card" key={event.id}>
               <div className="image-container">
                 <img src={event.image} alt="Event" />
-                <div className="concert-icon">
-                {event.highlight}
-                </div>
+                <div className="concert-icon">{event.highlight}</div>
               </div>
               <div className="icons">
                 <FavoriteBorderIcon className="icon" />
@@ -79,7 +77,7 @@ function TopEvents() {
 
         <div className="view-all-container">
           <Link to="/events">
-            <button className="btn-view">View All</button>
+            <button className="btn-view">Show All</button>
           </Link>
         </div>
       </div>
