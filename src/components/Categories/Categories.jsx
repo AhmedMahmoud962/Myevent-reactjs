@@ -1,5 +1,5 @@
 import React from 'react'
-import './Categories'
+import './Categories.css'
 import icon_1 from '../../assets/category/Group (1).svg'
 import icon_2 from '../../assets/category/Group (2).svg'
 import icon_3 from '../../assets/category/Group (3).svg'
@@ -8,8 +8,6 @@ import icon_5 from '../../assets/category/Group (5).svg'
 import icon_6 from '../../assets/category/Group (6).svg'
 import icon_7 from '../../assets/category/Group (7).svg'
 import icon_8 from '../../assets/category/Group (8).svg'
-
-
 
 const categories = [
   { name: 'Music', image: icon_1 },
