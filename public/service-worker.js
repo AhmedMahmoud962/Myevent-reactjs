@@ -1,5 +1,10 @@
 const CACHE_NAME = "react-pwa-cache-v1";
-const urlsToCache = ["/", "/index.html", "/manifest.json", "/favicon.png"];
+const urlsToCache = [
+  "/",
+  "/index.html",
+  "/manifest.webmanifest",
+  "/favicon.png",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

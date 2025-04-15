@@ -1,5 +1,5 @@
 import React from 'react'
-import './Categories.css'
+import './Categories'
 import icon_1 from '../../assets/category/Group (1).svg'
 import icon_2 from '../../assets/category/Group (2).svg'
 import icon_3 from '../../assets/category/Group (3).svg'
