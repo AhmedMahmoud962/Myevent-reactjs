@@ -3,13 +3,12 @@ import './UpcomingEvent.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import ShareIcon from '@mui/icons-material/Share'
 import GroupIcon from '@mui/icons-material/Group'
-import MusicNoteIcon from '@mui/icons-material/MusicNote'
+// import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
-import { events } from '../../assets/Data'
+import { upcomingEvents } from '../../assets/Data'
 
 function UpcomingEvent() {
   // Get only the last 4 events
-  const displayedEvents = events.slice(-4)
 
   return (
     <div className="events-section">
@@ -19,15 +18,17 @@ function UpcomingEvent() {
         </div>
 
         <div className="upcoming-event-grid">
-          {displayedEvents.map((event) => (
+          {upcomingEvents.map((event) => (
             <div className="upcoming-event-card" key={event.id}>
               <div className="image-container">
                 <img src={event.image} alt="Event" />
-                <div className="concert-icon">{event.highlight}</div>
+                {event.highlight && (
+                  <div className="concert-icon">{event.highlight}</div>
+                )}
               </div>
               <div className="icons">
-                <FavoriteBorderIcon className="icon" />
-                <ShareIcon className="icon" />
+              {localStorage.getItem('token') && <FavoriteBorderIcon className="icon" />}
+
               </div>
               <div className="upcoming-card-body">
                 <span className="date">{event.date}</span>

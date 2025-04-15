@@ -4,7 +4,9 @@ import Carousel from '../components/Carousel/Carousel'
 import Categories from '../components/Categories/Categories'
 import TopEvents from '../components/TopEvents/TopEvents'
 import UpcomingEvent from '../components/Upcoming/UpcomingEvent'
-
+import NewEvents from '../components/NewEvents/NewEvents'
+import Newsletter from '../components/Newsletter/Newsletter'
+import PastEvents from '../components/PastEvent/PastEvents'
 const Home = () => {
   return (
     <div>
@@ -32,7 +34,10 @@ const Home = () => {
       <Carousel />
       <Categories />
       <TopEvents />
+      <Newsletter />
+      <NewEvents />
       <UpcomingEvent />
+      <PastEvents />
     </div>
   )
 }

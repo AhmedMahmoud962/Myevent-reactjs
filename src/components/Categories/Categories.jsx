@@ -22,7 +22,15 @@ const categories = [
 
 const Categories = () => {
   return (
-    <div className="categories-container">
+    <div
+      className="categories-container"
+      style={{
+        width: window.innerWidth <= 768 ? '98%' : '94%',
+        margin: '20px auto',
+        padding: '20px',
+        textAlign: 'center',
+      }}
+    >
       <div className="categories-list">
         {categories.map((category, index) => (
           <div key={index} className="category-item">

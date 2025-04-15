@@ -16,11 +16,6 @@
   margin-bottom: 20px;
 }
 
-.-top-event-container h2 {
-  font-size: 2rem;
-  color: var(--text-primary);
-  margin: 0;
-}
 
 .top-navigation-buttons {
   display: flex;

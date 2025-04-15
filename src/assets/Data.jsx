@@ -1,9 +1,28 @@
+// Top Events
 import imageCard1 from './card/1.webp'
 import imageCard2 from './card/2.webp'
 import imageCard3 from './card/3.webp'
 import imageCard4 from './card/4.webp'
 import imageCard5 from './card/5.webp'
 import imageCard6 from './card/6.webp'
+// new events
+import newEvent1 from './card/new1.webp'
+import newEvent2 from './card/new2.webp'
+import newEvent3 from './card/new3.webp'
+import newEvent4 from './card/new4.webp'
+
+// Upcoming Events
+import upcoming1 from './card/upcoming1.webp'
+import upcoming2 from './card/upcoming2.webp'
+import upcoming3 from './card/upcoming3.webp'
+import upcoming4 from './card/upcoming4.webp'
+
+// Past Events
+import pastEvent1 from './card/past1.webp'
+import pastEvent2 from './card/past2.webp'
+import pastEvent3 from './card/past3.webp'
+import pastEvent4 from './card/past4.webp'
+
 
 export const events = [
   {
@@ -165,3 +184,173 @@ export const events = [
   
 ];
 
+// new events
+
+export const newEvents = [
+  {
+    id: 1,
+    image: newEvent1,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Health & Wellness',
+    price: 'Free',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Free",
+  },
+  {
+    id: 2,
+    image: newEvent2,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Education',
+    price: 'Free',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+  },
+  {
+    id: 3,
+    image: newEvent3,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Workshop',
+    price: 'Free',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+  },  
+  {
+    id: 4,
+    image: newEvent4,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Education',
+    price: 'Free',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+  },
+];
+
+// upcoming events
+
+export const upcomingEvents = [
+  {
+    id: 1,
+    image: upcoming1,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Sponsored",
+  },
+  {
+      id: 2,
+    image:  upcoming2,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Music',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+  },
+  {
+    id: 3,
+    image: upcoming3,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Education',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+    }, 
+    {
+      id: 4,
+    image: upcoming4,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    // highlight :"Sponsored",
+    },
+]
+
+// past events
+
+export const pastEvents = [
+  {
+    id: 1,
+    image: pastEvent1,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Sponsored",
+  },
+  {
+    id: 2,
+    image: pastEvent2,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Sponsored",
+  },
+  {
+    id: 3,
+    image: pastEvent3,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Sponsored",
+  },
+  {
+    id: 4,
+    image: pastEvent4,
+    date: '2025-05-15',
+    title: '100 Cities Project: Fighting Loneliness | Dinner with...',
+    time: 'Saturday • 8:00 PM + 42 more',
+    location: 'Cairo',
+    category: 'Business',
+    price: '$23.18',
+    followers: 174,
+    hostedBy: 'Jane Doe',
+    highlight :"Sponsored",
+  },
+]

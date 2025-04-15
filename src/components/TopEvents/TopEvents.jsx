@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
 import './TopEvents.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import ShareIcon from '@mui/icons-material/Share'
+// import ShareIcon from '@mui/icons-material/Share'
 import GroupIcon from '@mui/icons-material/Group'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
-import MusicNoteIcon from '@mui/icons-material/MusicNote'
+// import MusicNoteIcon from '@mui/icons-material/MusicNote'
 import { Link } from 'react-router-dom'
 import { events } from '../../assets/Data'
 
@@ -48,7 +48,9 @@ function TopEvents() {
             <div className="top-event-card" key={event.id}>
               <div className="image-container">
                 <img src={event.image} alt="Event" />
-                <div className="concert-icon">{event.highlight}</div>
+                {event.highlight && (
+                  <div className="concert-icon">{event.highlight}</div>
+                )}
               </div>
               <div className="icons">
                 <FavoriteBorderIcon className="icon" />
@@ -77,7 +79,7 @@ function TopEvents() {
 
         <div className="view-all-container">
           <Link to="/events">
-            <button className="btn-view">Show All</button>
+            <button className="btn-view">View All</button>
           </Link>
         </div>
       </div>
