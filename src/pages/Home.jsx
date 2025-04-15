@@ -7,6 +7,7 @@ import UpcomingEvent from '../components/Upcoming/UpcomingEvent'
 import NewEvents from '../components/NewEvents/NewEvents'
 import Newsletter from '../components/Newsletter/Newsletter'
 import PastEvents from '../components/PastEvent/PastEvents'
+import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
@@ -38,6 +39,7 @@ const Home = () => {
       <NewEvents />
       <UpcomingEvent />
       <PastEvents />
+      <Footer />
     </div>
   )
 }
