@@ -25,9 +25,14 @@
   display: none;
 }
 
+.category-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Category Item */
 .categories-list .category-item {
-  flex: 0 1 calc(12.5% - 30px);
+  flex: 0 1 calc(9.5% - 30px);
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
